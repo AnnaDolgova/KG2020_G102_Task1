@@ -10,7 +10,7 @@ public class DrawPanel  extends JPanel{
     Sun s = new Sun(100, 100, 50, 70, 43, Color.ORANGE);
     Background f = new Background(0, 0, 2000, 400, Color.BLUE);
     Pig piglet = new Pig(rnd.nextInt(310) + 50,340,140,120,Color.PINK);
-    Pig pigletCousen = new Pig(750,340,145,125,Color.PINK);
+    Pig pigletCousen = new Pig(rnd.nextInt(750)-200,340,145,125,Color.PINK);
     Cloud cloud = new Cloud(560, 150, 55, 90, 3, Color.WHITE);
     Cloud cloud1 = new Cloud(330, 105, 55, 90, 3, Color.WHITE);
     Text text = new Text (50,720, Color.DARK_GRAY);

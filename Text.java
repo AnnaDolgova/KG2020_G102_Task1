@@ -11,7 +11,7 @@ public class Text implements Drawable {
     }
     @Override
     public void draw(Graphics2D g) {
-        drawText(g,50,720,Color.DARK_GRAY);
+        drawText(g,x,y,Color.DARK_GRAY);
     }
     public static void drawText(Graphics2D g, int x, int y, Color c) {
         g.setPaint(Color.DARK_GRAY);

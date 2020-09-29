@@ -15,23 +15,17 @@ public class Background implements Drawable {
 
     @Override
     public void draw(Graphics2D g) {
-        drawSky(g, 0, 0, 2000, 400, Color.BLUE);
-        drawGrass(g,0,400,2000,400, Color.GREEN);
-        drawApple(g,650,650,30,30, Color.RED);
+        drawSky(g, x, y, w, h, Color.BLUE);
+        drawGrass(g,x,y+400,w,h, Color.GREEN);
     }
 
     public static void drawSky(Graphics2D g, int x, int y, int w, int h, Color c) {
         g.setColor(Color.BLUE);
-        g.fillRect(0, 0, 2000, 400);
+        g.fillRect(x, y, w, h);
     }
     public static void drawGrass(Graphics2D g, int x, int y, int w, int h, Color c) {
         g.setColor(Color.GREEN);
-        g.fillRect(0, 400, 2000, 400);
+        g.fillRect(x, y, w, h);
     }
-    public static void drawApple(Graphics2D g,int x, int y,int w, int h, Color c){
-        g.setColor(Color.RED);
-        g.fillOval(650,650,30,30);
     }
-
-}
 

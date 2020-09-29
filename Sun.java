@@ -17,7 +17,7 @@ public class Sun implements Drawable {
 
     @Override
     public void draw(Graphics2D g) {
-        drawSun (g, 100, 100, 50, 70, 43, Color.ORANGE);
+        drawSun (g, x, y, r, R, n, Color.ORANGE);
     }
     public static void drawSun (Graphics2D g, int x, int y,int r, int R, int n, Color c) {
         g.setColor(c);
